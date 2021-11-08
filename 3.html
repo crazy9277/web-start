@@ -11,6 +11,13 @@
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
+  <input type="button" value="fetch" onclick="
+        fetch('CSS').then(function(respons) {
+        response.text().then(function(text) {
+          alert(text);
+        })
+      })
+  ">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
